@@ -23,3 +23,9 @@ https://stackoverflow.com/questions/50121432/flask-authenticate-hashed-password-
 gist:
 https://gist.github.com/mayukh18/2223bc8fc152631205abd7cbf1efdd41/
 https://gist.github.com/dushan14
+
+Algunas de los enlaces sobre el despliegue en Heroku:
+https://devcenter.heroku.com/articles/logging#view-logs
+https://devcenter.heroku.com/articles/multiple-environments
+https://stackoverflow.com/questions/41804507/h14-error-in-heroku-no-web-processes-running
+https://stackoverflow.com/questions/48512013/couldnt-find-that-process-type-heroku
