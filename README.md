@@ -14,6 +14,7 @@ https://gist.github.com/mayukh18/2223bc8fc152631205abd7cbf1efdd41/
 https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one
 http://www.pythondiario.com/2019/01/parametros-get-y-post-con-flask.html
 https://stackoverflow.com/questions/22947905/flask-example-with-post
+https://www.codementor.io/@garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
 
 Para tener en cuenta PSQL:
 http://ujwalafossist.blogspot.com/2015/01/operationalerror-fesendauth-no-password.html
