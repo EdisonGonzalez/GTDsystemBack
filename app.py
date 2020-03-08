@@ -1,9 +1,12 @@
 import os
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 app.config.from_object(os.environ['APP_SETTINGS'])
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -11,10 +14,12 @@ db = SQLAlchemy(app)
 from models import Note
 
 @app.route("/")
+@cross_origin()
 def hello():
     return "Hello World!"
 
 @app.route("/add", methods=['POST'])
+@cross_origin()
 def add_note():
     title=request.form['title']
     content=request.form['content']
@@ -34,6 +39,7 @@ def add_note():
 	    return(str(e))
 
 @app.route("/getall")
+@cross_origin()
 def get_all():
     try:
         notes=Note.query.all()
@@ -42,6 +48,7 @@ def get_all():
 	    return(str(e))
 
 @app.route("/get/<id_>", methods = ['GET', 'POST', 'DELETE'])
+@cross_origin()
 def note_id(id_):
     if request.method == 'GET':
         try:
